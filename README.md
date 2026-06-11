@@ -1,3 +1,3 @@
 # Risk-Sharing
 
-Longevity risk sharing and peer-to-peer insurance
+Equilibrium allocations in longevity risk sharing and peer-to-peer insurance
