@@ -120,9 +120,9 @@ expected_utility_exact <- function(pf, i, delta, gamma, beta = 1) {
   (1 - q_i) * U_survive + beta * q_i * U_die
 }
 
-# --- 8b. Fast helpers for sweeps (heavy parts computed once per member) ------
-# precompute_member() runs the expensive convolutions ONCE; eu_fast() then
-# evaluates expected utility for any (delta, gamma, beta) by cheap arithmetic.
+# --- 8b. (heavy parts computed once per member) ------
+# precompute_member() runs the convolutions ONCE; eu_fast() then
+# evaluates expected utility for any (delta, gamma, beta).
 # eu_fast() is numerically identical to expected_utility_exact().
 precompute_member <- function(pf, i) {
   full <- pool_distribution(pf)
